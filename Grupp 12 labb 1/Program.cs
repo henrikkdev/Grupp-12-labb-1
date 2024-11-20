@@ -16,13 +16,10 @@
             int departureMinuteFromSTHLM = 03;
 
             // Välkomstmeddelande och användaren får instruktioner
-            Console.WriteLine("************************************************************************\n");
-            Console.WriteLine("Välkommen till flygtidsberäknaren\n");
-            Console.WriteLine("Vilket flyg vill du se detaljerad information om? (svara med siffra)");
-            Console.WriteLine("1. Stockholm - New York");
-            Console.WriteLine("2. New York - Stockholm");
-            Console.WriteLine("3. Avsluta programmet");
-            Console.Write("Skriv ditt val här:"); 
+            Console.WriteLine("******************************************************************* \n\n" +
+                "välkommen till flygtidsberäknaren!\n\n" + "vilket flyg vill du se detaljerad information om (svara i siffror) \n" +
+                "1. Stockholm - New York \n" + "2. New York - Stockholm \n" + "3. Avsluta programmet\n");
+            Console.Write("Skriv in ditt val här:");
             string userChoice = Console.ReadLine();
 
             // If-sats ifall användaren väljer 1, för att visa information om flyg från Stockholm till New York
