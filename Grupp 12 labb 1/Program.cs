@@ -12,9 +12,10 @@
             // Variabler för tiden då flygen avgår 
             int departureHourFromNY = 10;
             int departureMinuteFromNY = 10;
-            int departureHourFromSTHLM = 16;
+            int departureHourFromSTHLM = 14;
             int departureMinuteFromSTHLM = 03;
-
+        while (true)
+        {
             // Välkomstmeddelande och användaren får instruktioner
             Console.WriteLine("******************************************************************* \n\n" +
                 "välkommen till flygtidsberäknaren!\n\n" + "vilket flyg vill du se detaljerad information om (svara i siffror) \n" +
@@ -39,7 +40,7 @@
                 Console.WriteLine($"Avgångstid från Stockholm: {departureHourFromSTHLM:00}:{departureMinuteFromSTHLM:00}");
                 Console.WriteLine($"Ankomsttid i New York: {arrivalHour:00}:{arrivalMinute:00}");
                 Console.WriteLine("\n\n************************************************************************");
-
+                break;
             }
 
             // If-sats ifall användaren väljer 2, för att visa information om flyg från New York till Stockholm.
@@ -59,7 +60,7 @@
                 Console.WriteLine($"Avgångstid från New York: {departureHourFromNY:00}:{departureMinuteFromNY:00}");
                 Console.WriteLine($"Ankomsttid i Stockholm: {arrivalHour:00}:{arrivalMinute:00}");
                 Console.WriteLine("\n\n************************************************************************");
-
+                break;
             }
 
             // If-sats ifall användaren väljer alternativ 3, för att avsluta programmet.
@@ -68,15 +69,16 @@
                 Console.WriteLine("\n************************************************************************\n\n");
                 Console.WriteLine("Du har valt att avsluta programmet, välkommen åter!");
                 Console.WriteLine("\n\n************************************************************************");
-
+                break;
             }
 
             else
             {
                 Console.WriteLine("\n************************************************************************\n\n");
-                Console.WriteLine("Du skrev något helt otydligt, NU AVSLUTAS PROGRAMMET");
-                Console.WriteLine("\n\n************************************************************************");
+                Console.WriteLine("Du skrev något helt otydligt, var vänlig försök igen");
+                Console.WriteLine("\n\n************************************************************************\n");
             }
+        }
         }
     }
 }
