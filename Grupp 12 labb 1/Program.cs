@@ -26,7 +26,7 @@
             if (userChoice == "1")
             {
 
-                int arrivalHour = (departureHourFromSTHLM + flightHours - timeDifferenceHours % 24);
+                int arrivalHour = (departureHourFromSTHLM + flightHours - timeDifferenceHours) % 24;
                 int arrivalMinute = departureMinuteFromSTHLM + flightMinutes;
 
                 if (arrivalMinute >= 60)
