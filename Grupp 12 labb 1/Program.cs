@@ -14,7 +14,8 @@
             int departureMinuteFromNY = 10;
             int departureHourFromSTHLM = 14;
             int departureMinuteFromSTHLM = 03;
-        while (true)
+        //En loop som kör programmet så länge vilkåret uppfylls om det bryts så avslutar den programmet 
+            while (true)
         {
             // Välkomstmeddelande och användaren får instruktioner
             Console.WriteLine("******************************************************************* \n\n" +
